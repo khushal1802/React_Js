@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -17,46 +18,31 @@ function Navbar() {
             >
               <i className="uil-bars text-white"></i>
             </button>
-            <a className="navbar-brand" href="#">
-              admin<span className="main-color">kit</span>
-            </a>
+            <Link className="navbar-brand">
+              <img
+                className="rounded img-fluid"
+                width="65"
+                src="logo.png"
+                alt=""
+              />
+            </Link>
           </div>
           <div className="collapse navbar-collapse" id="toggle-navbar">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Settings
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      My account
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      My inbox
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Help
-                    </a>
-                  </li>
-
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Log out
-                    </a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <Link class="nav-link" href="#">
+                  Log in
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" href="#">
+                  Account
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" href="#">
+                  Log out
+                </Link>
               </li>
             </ul>
           </div>
@@ -66,4 +52,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar

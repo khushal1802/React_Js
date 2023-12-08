@@ -7,7 +7,6 @@ import Contact from './Contact';
 import Navbar from './Navbar';
 import Result from './Result';
 
-
 function App() {
   return (
     <div className="App">
