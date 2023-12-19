@@ -27,6 +27,10 @@ function App() {
     axios.post("http://localhost:3001/posts", result).then((res) => {
       console.log(res.data);
       setdata([...data, res.data]);
+
+      title.current.value = "";
+      author.current.value = "";
+
       Swal.fire({
         title: "Added...!",
         text: "Your data add successfuly!",
@@ -60,6 +64,15 @@ function App() {
         updatedData[index] = res.data;
         // console.log(updatedData[index]);
         setdata(updatedData);
+
+        title.current.value = "";
+        author.current.value = "";
+
+      Swal.fire({
+        title: "Updated...!",
+        text: "Your data update successfuly!",
+        icon: "success",
+      });
       });
   };
 

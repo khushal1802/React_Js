@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "fname": "Savannah Mccall",
+      "lname": "Arthur Webb",
+      "gender": "male",
+      "dob": "1989-06-07",
+      "assembly": "Cumque natus consequ",
+      "part": "Nihil explicabo Et ",
+      "address": "Laboris assumenda am",
+      "id": 1
+    },
+    {
+      "fname": "Lester Mckenzie",
+      "lname": "Glenna Larsen",
+      "gender": "male",
+      "dob": "2020-08-10",
+      "assembly": "Qui voluptate quas n",
+      "part": "Illo aut non dolorib",
+      "address": "Magnam iusto sed arc",
+      "id": 3
+    },
+    {
+      "fname": "Quynn Delacruz",
+      "lname": "Anthony Moody",
+      "gender": "male",
+      "dob": "1998-05-11",
+      "assembly": "Est enim incidunt ",
+      "part": "Numquam unde sint l",
+      "address": "Nemo quis ut quam ex",
+      "id": 4
+    },
+    {
+      "fname": "Aristotle Owens",
+      "lname": "Flavia Faulkner",
+      "gender": "female",
+      "dob": "1970-05-05",
+      "assembly": "Placeat repellendus",
+      "part": "Sit sint quae itaque",
+      "address": "Veniam repellendus",
+      "id": 5
+    },
+    {
+      "fname": "Georgia Soto",
+      "lname": "Kirk Duffy",
+      "gender": "female",
+      "dob": "1999-02-23",
+      "assembly": "Sint quia nostrum de",
+      "part": "Et voluptatem quis c",
+      "address": "Soluta nisi pariatur",
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
