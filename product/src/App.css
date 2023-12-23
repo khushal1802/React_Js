@@ -1,0 +1,26 @@
+.navbar{
+  background-color: rgb(140, 255, 140,0.6);
+    font-weight: 600;
+    height: 80px;
+    transition: all 0.5s;
+   backdrop-filter: blur(5px);
+}
+.navbar-brand:hover {
+  color: red;
+}
+.navbar-brand{
+  color:black;
+}
+.collapse{
+  justify-content: space-around;
+}
+.navbar-nav .nav-item .nav-link{
+  color:black;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color:red;
+}
+

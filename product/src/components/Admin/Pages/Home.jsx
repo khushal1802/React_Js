@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 
+
 const Home = () => {
-  const fname = useRef();
-  const lname = useRef();
-  const age = useRef();
+  const pname = useRef();
+  const dec = useRef();
+  const price = useRef();
   const [data, setdata] = useState([]);
   const [view, setview] = useState({});
   const [ind, setind] = useState();
@@ -13,12 +14,12 @@ const Home = () => {
     : [];
 
   function handleSubmit() {
-    const data = {
-      fname: fname.current.value,
-      lname: lname.current.value,
-      age: Number(age.current.value),
+    const newData = {
+      pname: pname.current.value,
+      dec: dec.current.value,
+      price: Number(price.current.value),
     };
-    arr.push(data);
+    arr.push(newData);
     localStorage.setItem("data", JSON.stringify(arr));
     setdata([...arr]);
   }
@@ -54,30 +55,30 @@ const Home = () => {
     <>
       <div className="container">
         <div>
-          First Name :~
+          product Name :~
           <input
             type="text"
-            name="fname"
-            ref={fname}
-            value={view.fname || ""}
+            name="pname"
+            ref={pname}
+            value={view.pname || ""}
             onChange={handle}
           ></input>
           <br />
-          Last Name :~
+          Description :~
           <input
             type="text"
-            name="lname"
-            ref={lname}
-            value={view.lname || ""}
+            name="dec"
+            ref={dec}
+            value={view.dec || ""}
             onChange={handle}
           ></input>
           <br />
-          Age :~
+          price :~
           <input
             type="number"
-            name="age"
-            ref={age}
-            value={view.age || ""}
+            name="price"
+            ref={price}
+            value={view.price || ""}
             onChange={handle}
           ></input>
           <br />
@@ -90,9 +91,9 @@ const Home = () => {
             <div className="col-4" key={ind}>
               <div className="card mt-3" style={{ width: "18rem" }}>
                 <div className="card-body">
-                  <h5 className="card-title">{val.fname}</h5>
-                  <p className="card-text">{val.lname}</p>
-                  <p className="card-text">{val.age}</p>
+                  <h5 className="card-title">{val.pname}</h5>
+                  <p className="card-text">{val.dec}</p>
+                  <p className="card-text">{val.price}</p>
                   <button onClick={() => deleteData(ind)}>Delete</button>
                   <button onClick={() => handleView(val, ind)}>Update</button>
                 </div>

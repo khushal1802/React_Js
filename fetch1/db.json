@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Et alias ratione et ",
+      "author": "Illo magna id ipsam "
+    },
+    {
+      "title": "Non qui sunt cupidi",
+      "author": "Ducimus qui aut ut ",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
