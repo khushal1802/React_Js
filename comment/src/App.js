@@ -96,7 +96,7 @@ function App() {
                     <h5 class="card-title">{val.fname}</h5>
                     <p class="card-text">{val.lname}</p>
                     <p class="card-text">{val.comment}</p>
-                    <button className="me-3" onClick={() => daleteData(ind)}>Delete</button>
+                    <button className="m-3" onClick={() => daleteData(ind)}>Delete</button>
                     <button onClick={() => viewData(val, ind)}>view</button>
                   </div>
                 </div>
